@@ -9,10 +9,15 @@ const deckGLCore = require('@deck.gl/core');
 const deckGLCoreLayers = require('@deck.gl/layers');
 
 const DeckGL = require('./deckgl').default;
+const DeckGLJSON = require('./deckgl-json').default;
 
 const _global = typeof window === 'undefined' ? global : window;
 
-_global.deck = Object.assign({}, _global.deck, deckGLCore, deckGLCoreLayers, {DeckGL});
+_global.deck = Object.assign({}, _global.deck, deckGLCore, deckGLCoreLayers, {
+  DeckGL,
+  DeckGLJSON
+});
+
 _global.luma = Object.assign({}, _global.luma, lumaGL);
 
 module.exports = _global.deck;

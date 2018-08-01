@@ -18,3 +18,6 @@ export {default as GPUGridLayer} from './gpu-grid-layer/gpu-grid-layer';
 export {default as BitmapLayer} from './bitmap-layer/bitmap-layer';
 
 export {default as ContourLayer} from './contour-layer/contour-layer';
+
+export {default as JSONLayer} from './addons/json-layer/json-layer';
+export {default as JSONDeck} from './addons/json-deck/json-deck';
