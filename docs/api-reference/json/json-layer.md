@@ -6,7 +6,7 @@ A composite layer that parses a json array and instantiates deck.gl layers by ma
 ## Usage
 
 ```js
-import {JSONLayer} from '@deck.gl/experimental-layers';
+import {JSONLayer} from '@deck.gl/json';
 
 const layers = [
   new JSONLayer({

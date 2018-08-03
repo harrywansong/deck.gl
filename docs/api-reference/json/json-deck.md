@@ -13,7 +13,7 @@ The JSON description:
 ## Usage
 
 ```js
-import {JSONDeck} from '@deck.gl/experimental-layers';
+import {JSONDeck} from '@deck.gl/json';
 import mapboxgl from 'mapbox-gl';
 
 import json from './us-map.json';
