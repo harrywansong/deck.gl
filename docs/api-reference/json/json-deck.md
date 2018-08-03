@@ -76,7 +76,7 @@ Passes to an instance of `JSONLayer` as the top level layer.
 
 ### `json.map` : Boolean
 
-- If set to `true` display a base map. See remarks below.
+* If set to `true` display a base map. See remarks below.
 
 
 ### `json.mapboxApiAccessToken` : String

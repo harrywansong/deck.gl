@@ -20,7 +20,8 @@
 
 import './imports-spec';
 import './core';
-import './core-layers';
+import './layers';
+import './json';
 
 // TODO - React test cases currently only work in browser
 // import './react';
