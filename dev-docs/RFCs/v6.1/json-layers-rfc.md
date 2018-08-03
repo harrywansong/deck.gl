@@ -132,12 +132,19 @@ Another problem is to determine which strings (layer props) should be parsed int
 > Could we also support string accessors in non-JSON APIs? If we did, the JSON API would just leverage the core functionality. The conversion from strings to functions could be built into the prop type system? Better performance characteristics (e.g. shallow string comparison succeeds where shallow function comparison fails)?
 
 
+## Testing
+
+If anything, JSON support should enable new easy ways of testing. Especially existing render tests should be easy to adapt to JSON layers.
+
+
 ## Future Work
+
+The functionality described in this RFC is just an initial implementation, there are a lot of additional capabilities that can be added.
 
 
 ### JSON Schemas
 
-It is customary to define and publish a JSON schema, which enables a bunch of existing tooling e.g. for validation.
+When defining a JSON based format, it is customary to define and publish a JSON schema, which enables a bunch of existing tooling e.g. for validation.
 
 * Define JSON schema for deck.gl and upload to jsonschemas.org.
 * Automatic generation of JSON schemas from prop types. There is already a base script in the `scripts` folder for traversing layer props. We could have consolidated set of tooling for automatically generating JSON schemas, Flow types, TypeScript types, React PropTypes etc.
